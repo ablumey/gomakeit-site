@@ -1,0 +1,141 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Make It — Terms of Service</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+  :root {
+    --bg: #f4f5f4; --surface: #ffffff; --ink: #1b2420; --ink-muted: #55635c;
+    --accent: #0e6e58; --accent-soft: #dceee8; --rule: #d8ddd9; --code-bg: #eef1ee;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101613; --surface: #16201c; --ink: #e9eeeb; --ink-muted: #9fb0a8;
+      --accent: #3fcfa9; --accent-soft: #17332b; --rule: #24312b; --code-bg: #1b2622;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101613; --surface: #16201c; --ink: #e9eeeb; --ink-muted: #9fb0a8;
+    --accent: #3fcfa9; --accent-soft: #17332b; --rule: #24312b; --code-bg: #1b2622;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    font-size: 17px; line-height: 1.6; margin: 0; padding: 0 20px;
+  }
+  .mono { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .shell { max-width: 760px; margin: 0 auto; padding-block: 72px 120px; }
+  header.masthead { margin-bottom: 56px; padding-bottom: 32px; border-bottom: 1px solid var(--rule); }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 18px;
+  }
+  .eyebrow a { color: var(--accent); }
+  h1 {
+    font-family: 'Source Serif 4', serif; font-weight: 700;
+    font-size: clamp(2.1rem, 4vw, 2.7rem); line-height: 1.12; letter-spacing: -0.01em;
+    margin: 0 0 14px; text-wrap: balance; color: var(--ink);
+  }
+  .dek { color: var(--ink-muted); font-size: 1.05rem; max-width: 56ch; margin: 0 0 22px; }
+  .meta-row {
+    display: flex; flex-wrap: wrap; gap: 8px 22px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--ink-muted);
+  }
+  .meta-row strong { color: var(--ink); font-weight: 500; }
+  section.clause { margin-bottom: 40px; scroll-margin-top: 32px; }
+  section.clause h3 {
+    display: flex; gap: 14px; align-items: baseline;
+    font-family: 'Source Serif 4', serif; font-weight: 600; font-size: 1.28rem;
+    margin: 0 0 12px; text-wrap: balance;
+  }
+  section.clause h3 .num { font-family: 'IBM Plex Mono', monospace; font-size: 0.95rem; color: var(--accent); font-weight: 500; flex-shrink: 0; }
+  section.clause p { margin: 0 0 14px; max-width: 66ch; }
+  section.clause p:last-child { margin-bottom: 0; }
+  section.clause strong { color: var(--ink); font-weight: 600; }
+  .callout {
+    background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    border-radius: 3px; padding: 18px 20px; margin: 18px 0; max-width: 62ch;
+  }
+  .callout p { margin: 0; }
+  .callout p + p { margin-top: 8px; }
+  footer.doc-footer {
+    margin-top: 80px; padding-top: 24px; border-top: 1px solid var(--rule);
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-muted);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  a { color: var(--accent); }
+</style>
+</head><body>
+<div class="shell">
+  <main>
+    <header class="masthead">
+      <p class="eyebrow">Make It &mdash; Legal &middot; <a href="/privacy">See Privacy Policy &rarr;</a></p>
+      <h1>Terms of Service</h1>
+      <p class="dek">The terms under which Make It operates, and what you're agreeing to by using it.</p>
+      <div class="meta-row">
+        <span>Effective <strong>September 18, 2026</strong></span>
+        <span>Operator <strong>Kismet Consulting LLC</strong></span>
+        <span>Contact <strong>privacy@gomakeit.ai</strong></span>
+      </div>
+    </header>
+
+    <section class="clause" id="t1">
+      <h3><span class="num">1.</span> The service</h3>
+      <p>Make It is early software. It's under active development, offered to a limited group of founders, and provided free of charge unless we tell you otherwise in writing. Early means things may break, change, or work differently next week than they do today.</p>
+    </section>
+
+    <section class="clause" id="t2">
+      <h3><span class="num">2.</span> Use your judgment about what you send</h3>
+      <p>We keep message content indefinitely, and it's visible to the team that runs Make It &mdash; see our <a href="/privacy">Privacy Policy</a> for the full picture. If something is too sensitive to sit in a database indefinitely, don't put it in the chat. Please don't send us anything you'd be uncomfortable having stored.</p>
+    </section>
+
+    <section class="clause" id="t3">
+      <h3><span class="num">3.</span> Automated &amp; AI-generated replies</h3>
+      <div class="callout">
+        <p>You are talking to an automated system. Replies are generated by an AI language model (Anthropic's Claude), not typed by a person in real time, unless we say otherwise.</p>
+      </div>
+      <p>Anything Make It tells you about your business is guidance from a model, not advice from a professional. It is not legal advice, financial advice, medical advice, or any other kind of professional advice. If you'd rather speak with a person directly, text <span class="mono">HELP</span> and we'll get back to you.</p>
+    </section>
+
+    <section class="clause" id="t4">
+      <h3><span class="num">4.</span> Eligibility &amp; conduct</h3>
+      <p>You must be at least 18 years old to use Make It. Don't use the service to send unlawful, abusive, or harassing content, or to attempt to disrupt or reverse-engineer how it operates.</p>
+    </section>
+
+    <section class="clause" id="t5">
+      <h3><span class="num">5.</span> Your data</h3>
+      <p>We collect your name, company, time zone, WhatsApp number, and the full content of every message, and we keep it indefinitely rather than on a schedule. You can ask us to delete or export it at any time by emailing <a href="mailto:privacy@gomakeit.ai">privacy@gomakeit.ai</a>. See our <a href="/privacy">Privacy Policy</a> for details on who can see it and who we share it with.</p>
+    </section>
+
+    <section class="clause" id="t6">
+      <h3><span class="num">6.</span> If the operator changes</h3>
+      <p>If Kismet Consulting LLC transfers or winds down Make It, these terms and the data they cover go with it. Whoever operates the service next inherits these obligations. They don't disappear because the name on the account changes.</p>
+    </section>
+
+    <section class="clause" id="t7">
+      <h3><span class="num">7.</span> No warranty</h3>
+      <p>Make It is provided "as is," without warranty of any kind, while it is under active development. We do not guarantee that replies will always be accurate or available. We are not liable for any loss arising from your use of the service, to the fullest extent the law allows.</p>
+    </section>
+
+    <section class="clause" id="t8">
+      <h3><span class="num">8.</span> Governing law</h3>
+      <p>Arizona law governs these terms. That's true even if a dispute involves someone or something in another state.</p>
+    </section>
+
+    <section class="clause" id="t9">
+      <h3><span class="num">9.</span> Changes</h3>
+      <p>We may update these terms or our Privacy Policy as the service develops. Material changes will be reflected here with an updated effective date above.</p>
+    </section>
+
+    <section class="clause" id="t10">
+      <h3><span class="num">10.</span> Contact</h3>
+      <p>Questions about these terms can be sent to <a href="mailto:privacy@gomakeit.ai">privacy@gomakeit.ai</a>.</p>
+    </section>
+
+    <footer class="doc-footer">
+      <span>Make It &middot; <a href="/">Home</a> &middot; <a href="/privacy">Privacy Policy</a></span>
+      <span>Last updated September 18, 2026</span>
+    </footer>
+  </main>
+</div>
+</body></html>

@@ -1,0 +1,171 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Make It — Privacy Policy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+  :root {
+    --bg: #f4f5f4; --surface: #ffffff; --ink: #1b2420; --ink-muted: #55635c;
+    --accent: #0e6e58; --accent-soft: #dceee8; --rule: #d8ddd9; --code-bg: #eef1ee;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101613; --surface: #16201c; --ink: #e9eeeb; --ink-muted: #9fb0a8;
+      --accent: #3fcfa9; --accent-soft: #17332b; --rule: #24312b; --code-bg: #1b2622;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101613; --surface: #16201c; --ink: #e9eeeb; --ink-muted: #9fb0a8;
+    --accent: #3fcfa9; --accent-soft: #17332b; --rule: #24312b; --code-bg: #1b2622;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    font-size: 17px; line-height: 1.6; margin: 0; padding: 0 20px;
+  }
+  .mono { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .shell { max-width: 760px; margin: 0 auto; padding-block: 72px 120px; }
+  header.masthead { margin-bottom: 56px; padding-bottom: 32px; border-bottom: 1px solid var(--rule); }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 18px;
+  }
+  .eyebrow a { color: var(--accent); }
+  h1 {
+    font-family: 'Source Serif 4', serif; font-weight: 700;
+    font-size: clamp(2.1rem, 4vw, 2.7rem); line-height: 1.12; letter-spacing: -0.01em;
+    margin: 0 0 14px; text-wrap: balance; color: var(--ink);
+  }
+  .dek { color: var(--ink-muted); font-size: 1.05rem; max-width: 56ch; margin: 0 0 22px; }
+  .meta-row {
+    display: flex; flex-wrap: wrap; gap: 8px 22px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--ink-muted);
+  }
+  .meta-row strong { color: var(--ink); font-weight: 500; }
+  section.clause { margin-bottom: 40px; scroll-margin-top: 32px; }
+  section.clause h3 {
+    display: flex; gap: 14px; align-items: baseline;
+    font-family: 'Source Serif 4', serif; font-weight: 600; font-size: 1.28rem;
+    margin: 0 0 12px; text-wrap: balance;
+  }
+  section.clause h3 .num { font-family: 'IBM Plex Mono', monospace; font-size: 0.95rem; color: var(--accent); font-weight: 500; flex-shrink: 0; }
+  section.clause p { margin: 0 0 14px; max-width: 66ch; }
+  section.clause p:last-child { margin-bottom: 0; }
+  section.clause ul { margin: 0 0 14px; padding-left: 1.3em; max-width: 64ch; }
+  section.clause li { margin-bottom: 6px; }
+  section.clause strong { color: var(--ink); font-weight: 600; }
+  .callout {
+    background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    border-radius: 3px; padding: 18px 20px; margin: 18px 0; max-width: 62ch;
+  }
+  .callout p { margin: 0; }
+  .callout p + p { margin-top: 8px; }
+  .disclosure-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px;
+    background: var(--rule); border: 1px solid var(--rule); border-radius: 4px; overflow: hidden;
+    margin: 18px 0 24px; max-width: 62ch;
+  }
+  .disclosure-grid div { background: var(--surface); padding: 14px 16px; }
+  .disclosure-grid .label { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 6px; }
+  .disclosure-grid .value { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--ink); font-variant-numeric: tabular-nums; }
+  footer.doc-footer {
+    margin-top: 80px; padding-top: 24px; border-top: 1px solid var(--rule);
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-muted);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  a { color: var(--accent); }
+</style>
+</head><body>
+<div class="shell">
+  <main>
+    <header class="masthead">
+      <p class="eyebrow">Make It &mdash; Legal &middot; <a href="/terms">See Terms of Service &rarr;</a></p>
+      <h1>Privacy Policy</h1>
+      <p class="dek">Make It is a personal WhatsApp check-in service for founders, built and run by Kismet Consulting LLC. This page explains what we collect, how long we keep it, and who can see it.</p>
+      <div class="meta-row">
+        <span>Effective <strong>September 18, 2026</strong></span>
+        <span>Operator <strong>Kismet Consulting LLC</strong></span>
+        <span>Contact <strong>privacy@gomakeit.ai</strong></span>
+      </div>
+    </header>
+
+    <section class="clause" id="p1">
+      <h3><span class="num">1.</span> We keep your data indefinitely</h3>
+      <p>We keep your data for as long as Make It exists. There is no automatic deletion date, and no scheduled purge running quietly in the background. We're telling you this plainly, up front, instead of leaving it for a later section.</p>
+      <p>We do this on purpose. Make It works by remembering you: what you said last week shapes how it responds today. A system that forgets can't do that job. If you'd rather we not keep your data, you can ask us to delete it at any time. See "Your rights" below.</p>
+      <p>If Kismet Consulting LLC transfers Make It to someone else, or shuts it down, this policy and the data it covers go with it. It doesn't just disappear because the name on the account changes.</p>
+    </section>
+
+    <section class="clause" id="p2">
+      <h3><span class="num">2.</span> What we collect</h3>
+      <p>When you use Make It, we collect and store:</p>
+      <ul>
+        <li>Your name</li>
+        <li>Your company</li>
+        <li>Your time zone</li>
+        <li>Your WhatsApp number</li>
+        <li>The full content of every message you send us and every message we send you</li>
+      </ul>
+      <p>We don't collect anything beyond what you tell us in conversation.</p>
+    </section>
+
+    <section class="clause" id="p3">
+      <h3><span class="num">3.</span> Who sees it</h3>
+      <p>Raw messages, including everything you write to us, are visible to the Make It team. Today that's a small number of people who operate the service, and we expect that number to grow as the team does.</p>
+      <p>We don't currently keep a log of who looked at what, or notify you when someone on the team reads your messages. That's not built yet, not a promise we're making today. If that changes, we'll update this page.</p>
+    </section>
+
+    <section class="clause" id="p4">
+      <h3><span class="num">4.</span> How we use it</h3>
+      <div class="callout">
+        <p>Replies are generated by an AI model, not typed by a person in real time, unless we say otherwise.</p>
+      </div>
+      <p>We use your information to run the conversation itself: to address you correctly, remember context from earlier in your history, and generate a reply that actually fits what you've told us. Your message text is sent to Anthropic's Claude to produce that reply.</p>
+    </section>
+
+    <section class="clause" id="p5">
+      <h3><span class="num">5.</span> Who we share it with</h3>
+      <p><strong>We do not sell your information, and we do not share it with anyone for marketing or promotional purposes.</strong> We use three outside services to run Make It, and nothing more:</p>
+      <ul>
+        <li><strong>Twilio</strong> &mdash; delivers the WhatsApp messages themselves.</li>
+        <li><strong>Anthropic</strong> &mdash; processes message text to generate the AI-written reply you receive.</li>
+        <li><strong>Supabase</strong> &mdash; stores your data in our database.</li>
+      </ul>
+      <p>None of these providers may use your data for their own purposes beyond delivering the service to you.</p>
+      <p><strong>We do not share your data with any accelerator, program, investor, or other third party.</strong> Not your participation, not your content, not a summary of either. No exceptions, at least not in this phase of Make It.</p>
+    </section>
+
+    <section class="clause" id="p6">
+      <h3><span class="num">6.</span> Your rights</h3>
+      <p>You can ask us to delete your data, or send you a copy of it, at any time. Email <a href="mailto:privacy@gomakeit.ai">privacy@gomakeit.ai</a> and we'll take care of it. There's no form to fill out and no waiting period we make you sit through.</p>
+    </section>
+
+    <section class="clause" id="p7">
+      <h3><span class="num">7.</span> Not professional advice</h3>
+      <p>Make It talks with you about your business and may offer suggestions, encouragement, or ideas. That's guidance from a model, not advice from a professional. It is not legal advice, financial advice, medical advice, or any other kind of professional advice. Treat it like a smart friend's opinion, not a licensed expert's.</p>
+    </section>
+
+    <section class="clause" id="p8">
+      <h3><span class="num">8.</span> Messaging &amp; opt-out</h3>
+      <p><strong>Message and data rates may apply.</strong> Reply <span class="mono">STOP</span> at any time to stop receiving messages, or <span class="mono">HELP</span> for help.</p>
+      <div class="disclosure-grid">
+        <div><div class="label">Channel</div><div class="value">WhatsApp only</div></div>
+        <div><div class="label">Opt-out</div><div class="value">Reply STOP</div></div>
+        <div><div class="label">Help</div><div class="value">Reply HELP</div></div>
+        <div><div class="label">Rates</div><div class="value">May apply</div></div>
+      </div>
+    </section>
+
+    <section class="clause" id="p9">
+      <h3><span class="num">9.</span> Governing law &amp; contact</h3>
+      <p>Arizona law governs this policy. That's true even if a disagreement involves someone or something in another state.</p>
+      <p>Questions about this policy, or a request to delete or export your data, can be sent to <a href="mailto:privacy@gomakeit.ai">privacy@gomakeit.ai</a>.</p>
+    </section>
+
+    <footer class="doc-footer">
+      <span>Make It &middot; <a href="/">Home</a> &middot; <a href="/terms">Terms of Service</a></span>
+      <span>Last updated September 18, 2026</span>
+    </footer>
+  </main>
+</div>
+</body></html>
